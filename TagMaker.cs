@@ -5,16 +5,18 @@ namespace TagMaker {
     public string Name {get; set;}
     public string Organization {get; set;}
     public void PrintTag() {
-      Console.WriteLine("##################################################################################");
-      Console.WriteLine("###                             ANNUAL CONFERENCE                              ###");
-      Console.WriteLine("##################################################################################");
-      Console.WriteLine("### NAME:  {0}                                                                 ###", Name);
-      Console.WriteLine("###                                                                            ###");
-      Console.WriteLine("##################################################################################");
-      Console.WriteLine("### ORGANIZATION:  {0}                                                         ###", Organization);
-      Console.WriteLine("###                                                                            ###");
-      Console.WriteLine("##################################################################################");
-    }
+       
+      Console.WriteLine("##################################################################################\n" +
+                        "###                             ANNUAL CONFERENCE                              ###\n" +
+                        "##################################################################################");
+      Console.WriteLine(String.Format("### Name: {0, -69}###", Name));
+      Console.WriteLine("###                                                                            ###\n" +
+                        "##################################################################################");
+      Console.WriteLine(String.Format("### ORGANIZATION: {0, -61}###", Organization));                  
+      Console.WriteLine("###                                                                            ###\n" +
+                        "###                                                                            ###\n" +
+                        "##################################################################################");
+    }                    
     public void ClearSettings() {
       Name = null;
       Organization = null;
