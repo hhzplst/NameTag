@@ -15,7 +15,7 @@ namespace TagMaker {
       Console.WriteLine(String.Format("### ORGANIZATION: {0, -61}###", Organization));                  
       Console.WriteLine("###                                                                            ###\n" +
                         "###                                                                            ###\n" +
-                        "##################################################################################");
+                        "##################################################################################\n");
     }                    
     public void ClearSettings() {
       Name = null;
