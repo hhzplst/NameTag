@@ -4,8 +4,6 @@ namespace TagMaker {
     public class TagMakerTest {
         public static void Main (string[] args) {
             TagMaker testTagMaker = new TagMaker();
-            Console.WriteLine("Printing the Intial Tag...");
-            testTagMaker.PrintTag();
             
             Console.WriteLine("Printing the Name Tag for Ivy from BCC...");
             testTagMaker.Name = "Ivy Chang";
@@ -13,7 +11,10 @@ namespace TagMaker {
             testTagMaker.PrintTag();
 
             Console.WriteLine("Printing an Empty Tag...");
-            testTagMaker.PrintBlankTag();
+            TagMaker.PrintBlankTag();
+
+            Console.WriteLine("Printing the most recent settting...");
+            testTagMaker.PrintTag();
 
             Console.WriteLine("Printing the Name Tag for Austen from Cal...");
             testTagMaker.Name = "Austen-Lane Roberts";
@@ -22,6 +23,7 @@ namespace TagMaker {
 
             Console.WriteLine("Clearing the Settings...");
             testTagMaker.ClearSettings(); 
+            testTagMaker.PrintTag();
         }
     }
 }
@@ -36,20 +38,8 @@ Compilation succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time elapsed 00:00:01.6124137
+Time elapsed 00:00:01.3459955
  
-
-Printing the Intial Tag...
-##################################################################################
-###                             ANNUAL CONFERENCE                              ###
-##################################################################################
-### Name:                                                                      ###
-###                                                                            ###
-##################################################################################
-### ORGANIZATION:                                                              ###
-###                                                                            ###
-###                                                                            ###
-##################################################################################
 
 Printing the Name Tag for Ivy from BCC...
 ##################################################################################
@@ -75,6 +65,18 @@ Printing an Empty Tag...
 ###                                                                            ###
 ##################################################################################
 
+Printing the most recent settting...
+##################################################################################
+###                             ANNUAL CONFERENCE                              ###
+##################################################################################
+### Name: Ivy Chang                                                            ###
+###                                                                            ###
+##################################################################################
+### ORGANIZATION: Berkeley City College                                        ###
+###                                                                            ###
+###                                                                            ###
+##################################################################################
+
 Printing the Name Tag for Austen from Cal...
 ##################################################################################
 ###                             ANNUAL CONFERENCE                              ###
@@ -88,6 +90,17 @@ Printing the Name Tag for Austen from Cal...
 ##################################################################################
 
 Clearing the Settings...
+##################################################################################
+###                             ANNUAL CONFERENCE                              ###
+##################################################################################
+### Name:                                                                      ###
+###                                                                            ###
+##################################################################################
+### ORGANIZATION:                                                              ###
+###                                                                            ###
+###                                                                            ###
+##################################################################################
+
 
 
 *******************************************END TEST OUTPUT**********************************************/
