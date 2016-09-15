@@ -6,23 +6,24 @@ namespace TagMaker {
     public string Organization {get; set;}
     public void PrintTag() {
        
-      Console.WriteLine("##################################################################################\n" +
-                        "###                             ANNUAL CONFERENCE                              ###\n" +
-                        "##################################################################################");
-      Console.WriteLine(String.Format("### Name: {0, -69}###", Name));
-      Console.WriteLine("###                                                                            ###\n" +
-                        "##################################################################################");
-      Console.WriteLine(String.Format("### ORGANIZATION: {0, -61}###", Organization));                  
-      Console.WriteLine("###                                                                            ###\n" +
-                        "###                                                                            ###\n" +
-                        "##################################################################################\n");
+      Console.WriteLine(String.Format("##################################################################################\n" +
+                                      "###                             ANNUAL CONFERENCE                              ###\n" +
+                                      "##################################################################################\n" +
+                                      "### Name: {0, -69}###\n" +
+                                      "###                                                                            ###\n" +
+                                      "##################################################################################\n" +
+                                      "### ORGANIZATION: {1, -61}###\n" +                  
+                                      "###                                                                            ###\n" +
+                                      "###                                                                            ###\n" +
+                                      "##################################################################################\n", 
+                                      Name, Organization));
     }                    
     public void ClearSettings() {
       Name = null;
       Organization = null;
     }
     public static void PrintBlankTag() {
-      
+      //making sure printing a blank tag doesn't interfere with the settings
       Console.WriteLine("##################################################################################\n" +
                         "###                             ANNUAL CONFERENCE                              ###\n" +
                         "##################################################################################\n" +
