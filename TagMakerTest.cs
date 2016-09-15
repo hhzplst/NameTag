@@ -13,6 +13,7 @@ namespace TagMaker {
             Console.WriteLine("Printing an Empty Tag...");
             TagMaker.PrintBlankTag();
 
+            //printing an empty tag doesn't lose the setting
             Console.WriteLine("Printing the most recent settting...");
             testTagMaker.PrintTag();
 
